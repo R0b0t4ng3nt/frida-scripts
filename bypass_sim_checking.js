@@ -5,7 +5,7 @@ setTimeout(function() {
 		const sm = Java.use("android.telephony.SubscriptionManager");
 		const si = Java.use("android.telephony.SubscriptionInfo");
 		const bm = Java.use("android.graphics.Bitmap");
-	    const bmc = Java.use("android.graphics.Bitmap$Config");
+	    	const bmc = Java.use("android.graphics.Bitmap$Config");
 		const bmcv = bmc.ARGB_8888; 
 		var fr = true;
 		var bmi = "";
@@ -15,12 +15,12 @@ setTimeout(function() {
 			Java.choose("android.graphics.Bitmap", {
 			onMatch: function (instance) {
 				console.log("[*] Found instance of android.graphics.Bitmap");
-            bmi = instance.createBitmap(1,2,bmcv.value);
-			fr = false;
-			},
+            			bmi = instance.createBitmap(1,2,bmcv.value);
+				fr = false;
+						},
 			onComplete: function () { }
 			});	
-		}
+			}
 		
 		sm.getActiveSubscriptionInfoList.overload().implementation = function () {		
 			console.log("");
