@@ -9,5 +9,5 @@ Certain android apps check if a SIM card is installed before giving access to th
 
 2. Command - `frida -l test.js -D <device-name> -f <package-name> --no-paus`
 
-## TO Do
+## To Do
 Add more scripts :)
