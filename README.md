@@ -1,7 +1,7 @@
 # List of useful frida-scripts for android
 
 ### 1. Bypass SIM checking on Android
-Certain android apps check if a SIM card is installed before giving access to the app. This script attempts to bypass this by hooking most commonly used method - `android.telephony.SubscriptionManager.getActiveSubscriptionInfoList()`.
+Certain android apps (Financial apps, payment wallets) check if a SIM card is installed before giving access to the app. This script attempts to bypass this by hooking most commonly used method - `android.telephony.SubscriptionManager.getActiveSubscriptionInfoList()`.
 
 #### Usage:
 
